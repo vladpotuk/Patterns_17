@@ -6,5 +6,4 @@ public class Project
     public string Name { get; set; }
     public string Description { get; set; }
     public List<Task> Tasks { get; } = new List<Task>();
-    
 }

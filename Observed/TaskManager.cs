@@ -1,39 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class TaskManager
+public class TaskManager<T>
 {
-    private List<Task> tasks = new List<Task>();
-    private List<User> users = new List<User>();
-    private List<Project> projects = new List<Project>();
+    private List<T> items = new List<T>();
 
-    public List<Task> GetTasks()
+    public void AddItem(T item)
     {
-        return tasks;
+        items.Add(item);
     }
 
-    public List<User> GetUsers()
+    public List<T> GetItems()
     {
-        return users;
-    }
-
-    public List<Project> GetProjects()
-    {
-        return projects;
-    }
-
-    public void AddTask(Task task)
-    {
-        tasks.Add(task);
-    }
-
-    public void AddUser(User user)
-    {
-        users.Add(user);
-    }
-
-    public void AddProject(Project project)
-    {
-        projects.Add(project);
+        return items;
     }
 }

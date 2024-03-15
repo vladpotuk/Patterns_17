@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class Task : ITaskAssignable
+public class Task
 {
     public int TaskId { get; set; }
     public string Title { get; set; }
@@ -11,5 +11,4 @@ public class Task : ITaskAssignable
     public string Project { get; set; }
     public string AssignedBy { get; set; }
     public DateTime AssignedDate { get; set; }
-    
 }
